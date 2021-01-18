@@ -1,0 +1,128 @@
+.market{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 162px;
+    padding-bottom: 133px;
+    position: relative;
+
+    @media screen and (max-width: 992px){
+        padding-top: 100px;
+        padding-bottom: 80px;
+        
+    }
+
+    @media screen and (max-width: 576px){
+        padding-top: 54px;
+        padding-bottom: 36px;
+        overflow: hidden;
+        
+    }
+
+    &__backtext{
+        color: rgba(0, 0, 0, 0.04);
+        position: absolute;
+        left: 120px;
+        top: 138px;
+        font-weight: bold;
+        font-size: 144px;
+        line-height: 176px;
+        z-index: 1;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; 
+
+        @media screen and (max-width: 1370px){
+            left: -10px;
+            top: 310px;
+        }
+
+        @media screen and (max-width: 992px){
+            font-size: 100px;
+            line-height: 100px;
+            left: 20px;
+            top: 260px;
+        }
+
+        @media screen and (max-width: 768px){
+            left: -50px;
+            top: 300px;
+        }
+
+        @media screen and (max-width: 576px){
+            font-size: 64px;
+            line-height: 78px;
+            left: -10px;
+            top: 190px;
+        }
+
+        @media screen and (max-width: 320px){
+            font-size: 64px;
+            line-height: 78px;
+            left: -20px;
+        }
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 595px;
+    }
+
+    &__header{
+        text-transform: uppercase;
+    }
+
+    &__img {
+
+        img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+            right: 10%;
+
+            @media screen and (max-width: 1200px){
+                right: 0;
+            }
+        }
+    } 
+
+    &__gold{
+
+    }
+
+    &__right{
+        position: relative;
+        max-width: 457px;
+        margin-top: 13px;
+        margin-right: auto;
+        margin-left: auto;
+
+        p{
+            margin-top: 38px;
+
+            @media screen and (max-width: 576px){
+                margin-top: 27px;
+            }
+        }
+    }
+
+    
+    &__plus{
+        margin-bottom: 11px;
+
+        @media screen and (max-width: 1200px){
+            position: absolute;
+            top: -75px;
+            z-index: 2;
+        }
+    }
+}
